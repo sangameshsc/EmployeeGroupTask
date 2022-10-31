@@ -75,7 +75,6 @@
             <item name="config" xsi:type="array">
  
                 <item name="collapsible" xsi:type="boolean">false</item>
- 
                 <item name="label" xsi:type="string" translate="true">Employee_Data</item>
  
                 <item name="sortOrder" xsi:type="number">20</item>
