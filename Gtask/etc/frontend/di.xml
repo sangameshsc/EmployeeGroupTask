@@ -1,0 +1,19 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\Customer\Controller\Account\LoginPost" type="Codilar\Gtask\Controller\Account\LoginPost" />
+    <preference for="Codilar\Gtask\Api\EmpRepositoryInterface" type="Codilar\Gtask\Model\EmpRepository" />
+    <preference for="Codilar\Gtask\Api\Data\EmpInterface" type="Codilar\Gtask\Model\Emp" />
+      <virtualType name="Codilar\Gtask\Model\ResourceModel\Emp\Emp\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+                <argument name="mainTable" xsi:type="string">empdata</argument>
+            <argument name="resourceModel" xsi:type="string">Codilar\Gtask\Model\ResourceModel\Emp</argument>
+        </arguments>
+        </virtualType>
+        <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+            <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="emp_record_emp_list_data_source" xsi:type="string">Codilar\Gtask\Model\ResourceModel\Emp\Emp\Collection</item>
+                <item name="employee_form_data_source" xsi:type="string">Codilar\Gtask\Model\ResourceModel\Emp\Emp\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

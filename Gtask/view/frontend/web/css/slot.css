@@ -1,0 +1,26 @@
+h2
+{
+    font-size: 50px;
+    font-family:ui-rounded;
+    margin-bottom: 37px;
+}
+input[type=text]
+{
+    display: flex;
+    height:30px;
+    width:400px;
+
+}
+.empmain
+{
+    border-radius: 40px;
+    border-style:ridge;
+    padding:75px;
+    width:400px;
+}
+.timepicker
+{
+    height:50px;
+    width:150px;
+}
+

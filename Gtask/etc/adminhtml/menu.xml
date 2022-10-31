@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Codilar_Gtask::booking" title="Emp_Details" translate="main" module="Codilar_Gtask" sortOrder="50" resource="Codilar_Gtask::booking" />
+        <add id="Codilar_Gtask::emp" title="emp" translate="content" module="Codilar_Gtask" parent="Codilar_Gtask::booking" sortOrder="10" dependsOnModule="Codilar_Gtask" action="emp/emp" resource="Codilar_Gtask::emp"/>
+    </menu>
+</config>

@@ -1,0 +1,20 @@
+<?php if ($block->canShowBlock() ):?>
+    <div class="empmain">
+<h2>Add Employee Details</h2>
+<form class="" action="<?php echo $this->getAddPostUrl(); ?>" id="codilar-Gtask-form" method="post">
+    <fieldset class="fieldset">
+    <h4><label for="firstname">FirstName : </label></h4>
+    <input type="text" name="firstname" id="firstname" placeholder="" class="datepicker" autocomplete="off" required>
+    <h4><label for="lastname">LastName : </label></h4>
+    <input type="text" name="lastname" id="lastname" placeholder="" class="" autocomplete="off" required>
+    <h4><label for="email">Email : </label></h4>
+    <input type="email" name="email" id="email" placeholder="" class="" autocomplete="off" required>
+    <h4><label for="phone">Phone : </label></h4>
+    <input type="number" name="phone" id="phone" placeholder="" class="" autocomplete="off" required>
+    </fieldset>
+    <button type="submit" title="Submit" class="action submit primary">
+        <span>Submit</span>
+    </button>
+</form>
+</div>
+<?php endif; ?>
